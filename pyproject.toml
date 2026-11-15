@@ -2,4 +2,4 @@
 name = "PySide Project"
 
 [tool.pyside6-project]
-files = ["mainwindow.py", "mainwindow.ui"]
+files = ["logic/main_actions.py", "logic/settings_actions.py", "main.py", "views/main_window.py", "mainwindow.ui", "views/settings_window.py", "widgets.py"]
