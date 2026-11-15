@@ -53,6 +53,7 @@ class Ui_MainWindow(object):
 
         self.pushButton_translation = QPushButton(self.centralWidget)
         self.pushButton_translation.setObjectName(u"pushButton_translation")
+        self.pushButton_translation.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.horizontalLayout_2.addWidget(self.pushButton_translation)
 
@@ -73,11 +74,13 @@ class Ui_MainWindow(object):
 
         self.pushButton_network = QPushButton(self.centralWidget)
         self.pushButton_network.setObjectName(u"pushButton_network")
+        self.pushButton_network.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.horizontalLayout.addWidget(self.pushButton_network)
 
         self.pushButton_settings = QPushButton(self.centralWidget)
         self.pushButton_settings.setObjectName(u"pushButton_settings")
+        self.pushButton_settings.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.horizontalLayout.addWidget(self.pushButton_settings)
 
@@ -91,6 +94,7 @@ class Ui_MainWindow(object):
         self.gridLayout.setContentsMargins(-1, -1, 0, -1)
         self.gridLayout_4 = QGridLayout()
         self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setVerticalSpacing(10)
         self.pushButton_switch = QPushButton(self.centralWidget)
         self.pushButton_switch.setObjectName(u"pushButton_switch")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
@@ -98,19 +102,22 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.pushButton_switch.sizePolicy().hasHeightForWidth())
         self.pushButton_switch.setSizePolicy(sizePolicy)
+        self.pushButton_switch.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.pushButton_switch.setAutoRepeatDelay(300)
         self.pushButton_switch.setAutoRepeatInterval(10)
 
         self.gridLayout_4.addWidget(self.pushButton_switch, 0, 0, 1, 1)
 
         self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.line_2 = QFrame(self.centralWidget)
-        self.line_2.setObjectName(u"line_2")
-        self.line_2.setFrameShape(QFrame.Shape.VLine)
-        self.line_2.setFrameShadow(QFrame.Shadow.Sunken)
+        self.line = QFrame(self.centralWidget)
+        self.line.setObjectName(u"line")
+        self.line.setCursor(QCursor(Qt.CursorShape.SplitHCursor))
+        self.line.setFrameShape(QFrame.Shape.VLine)
+        self.line.setFrameShadow(QFrame.Shadow.Sunken)
 
-        self.horizontalLayout_4.addWidget(self.line_2)
+        self.horizontalLayout_4.addWidget(self.line)
 
 
         self.gridLayout_4.addLayout(self.horizontalLayout_4, 1, 0, 1, 1)
@@ -123,16 +130,22 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.comboBox_languagTo = QComboBox(self.centralWidget)
         self.comboBox_languagTo.setObjectName(u"comboBox_languagTo")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.comboBox_languagTo.sizePolicy().hasHeightForWidth())
+        self.comboBox_languagTo.setSizePolicy(sizePolicy1)
+        self.comboBox_languagTo.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.verticalLayout_2.addWidget(self.comboBox_languagTo)
 
         self.textEdit_transTo = QTextEdit(self.centralWidget)
         self.textEdit_transTo.setObjectName(u"textEdit_transTo")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.textEdit_transTo.sizePolicy().hasHeightForWidth())
-        self.textEdit_transTo.setSizePolicy(sizePolicy1)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.textEdit_transTo.sizePolicy().hasHeightForWidth())
+        self.textEdit_transTo.setSizePolicy(sizePolicy2)
 
         self.verticalLayout_2.addWidget(self.textEdit_transTo)
 
@@ -144,13 +157,14 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.comboBox_languageFrom = QComboBox(self.centralWidget)
         self.comboBox_languageFrom.setObjectName(u"comboBox_languageFrom")
+        self.comboBox_languageFrom.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
 
         self.verticalLayout.addWidget(self.comboBox_languageFrom)
 
         self.textEdit_transFrom = QTextEdit(self.centralWidget)
         self.textEdit_transFrom.setObjectName(u"textEdit_transFrom")
-        sizePolicy1.setHeightForWidth(self.textEdit_transFrom.sizePolicy().hasHeightForWidth())
-        self.textEdit_transFrom.setSizePolicy(sizePolicy1)
+        sizePolicy2.setHeightForWidth(self.textEdit_transFrom.sizePolicy().hasHeightForWidth())
+        self.textEdit_transFrom.setSizePolicy(sizePolicy2)
 
         self.verticalLayout.addWidget(self.textEdit_transFrom)
 
